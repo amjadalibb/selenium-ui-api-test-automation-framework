@@ -4,28 +4,25 @@
   "description": "This is for Woolies Tech Challenge",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js .\\src\\features\\automationPractice.feature -r .\\src\\pageSteps",
-    "example": "cucumber-js .\\features\\addition.feature -r .\\steps"
+    "test": "cucumber-js .\\src\\features\\automationPractice.feature -r .\\src\\pageSteps -f summary"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/amjadalibb/woolies_tech_challenge.git"
   },
-  "author": "",
+  "author": "Amjad Ali",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/amjadalibb/woolies_tech_challenge/issues"
   },
   "homepage": "https://github.com/amjadalibb/woolies_tech_challenge#readme",
   "devDependencies": {
+    "chai": "^4.2.0",
     "chromedriver": "^84.0.0",
     "cucumber": "^6.0.5",
-    "faker": "^4.1.0",
+    "cucumber-html-reporter": "^5.2.0",
+    "dotenv": "^8.2.0",
     "path": "^0.12.7",
     "selenium-webdriver": "^4.0.0-alpha.7"
-  },
-  "dependencies": {
-    "chai": "^4.2.0",
-    "dotenv": "^8.2.0"
   }
 }

@@ -15,8 +15,9 @@ BeforeAll(async function () {
   driver = page.driver;
 });
 
-AfterAll(function () {
-  // driver.quit();
+AfterAll(async function () {
+  await page.generateReport();
+  await driver.quit();
 });
 
 Before(async function () {
@@ -36,6 +37,18 @@ Given('I have opened website', async function () {
 When('I login account', async function () {
   const account = await page.login();
   expect(account).to.equal('Amjad Ali');
+});
+
+When("I navigate to section {string}", async function (location) {
+  await page.navigateTo(location);
+});
+
+When('I continue shopping', async function () {
+  await page.continueShopping();
+});
+
+When('I add {string} to cart', async function (dressName) {
+  await page.addProductToCart(dressName);
 });
 
 When('I add two items in cart', async function () {
