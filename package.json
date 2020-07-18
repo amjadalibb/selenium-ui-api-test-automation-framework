@@ -1,0 +1,31 @@
+{
+  "name": "woolies_tech_challenge",
+  "version": "1.0.0",
+  "description": "This is for Woolies Tech Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js .\\src\\features\\automationPractice.feature -r .\\src\\pageSteps",
+    "example": "cucumber-js .\\features\\addition.feature -r .\\steps"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amjadalibb/woolies_tech_challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amjadalibb/woolies_tech_challenge/issues"
+  },
+  "homepage": "https://github.com/amjadalibb/woolies_tech_challenge#readme",
+  "devDependencies": {
+    "chromedriver": "^84.0.0",
+    "cucumber": "^6.0.5",
+    "faker": "^4.1.0",
+    "path": "^0.12.7",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "dotenv": "^8.2.0"
+  }
+}
