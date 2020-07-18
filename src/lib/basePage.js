@@ -25,7 +25,7 @@ var Page = function() {
         reportSuiteAsScenarios: true,
         scenarioTimestamp: true,
         launchReport: false,
-        storeScreenshots: true,
+        storeScreenshots: false,
         metadata: {
             "Base URL": process.env.BASE_URL,
             "View Port": process.env.VIEWPORT,
@@ -39,6 +39,7 @@ var Page = function() {
 
     this.generateReport = async function() {
         reporterOptions.launchReport = true;
+        reporterOptions.storeScreenshots = true;
         await reporter.generate(reporterOptions);
     };
 
