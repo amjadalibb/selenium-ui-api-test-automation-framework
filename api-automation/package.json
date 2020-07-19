@@ -1,0 +1,26 @@
+{
+  "name": "api-automation",
+  "version": "1.0.0",
+  "description": "This is tech challenge of Woolies for API",
+  "main": "index.js",
+  "scripts": {
+    "test": "cucumber-js .\\src\\features\\weather.feature -r .\\src\\steps -f summary -f json:test\\report\\cucumber_report.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amjadalibb/woolies_tech_challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amjadalibb/woolies_tech_challenge/issues"
+  },
+  "homepage": "https://github.com/amjadalibb/woolies_tech_challenge#readme",
+  "devDependencies": {
+    "axios": "^0.19.2",
+    "chai": "^4.2.0",
+    "cucumber": "^6.0.5",
+    "cucumber-html-reporter": "^5.2.0",
+    "dotenv": "^8.2.0"
+  }
+}

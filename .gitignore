@@ -1,5 +1,5 @@
-debug.log
-package-lock.json
-node_modules
-test/report/screenshots
-test/report/cucumber_report.html
+*/debug.log
+*/package-lock.json
+*/node_modules
+*/test/report/screenshots
+*/test/report/cucumber_report.html

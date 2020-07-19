@@ -1,0 +1,87 @@
+[
+  {
+    "keyword": "Feature",
+    "name": "API Automation Challenge",
+    "line": 1,
+    "id": "api-automation-challenge",
+    "tags": [],
+    "uri": "src\\features\\weather.feature",
+    "elements": [
+      {
+        "id": "api-automation-challenge;a-happy-holidaymaker",
+        "keyword": "Scenario",
+        "line": 2,
+        "name": "A happy holidaymaker",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 3,
+            "name": "I like to holiday in 'Sydney'",
+            "match": {
+              "location": "src\\steps\\weather.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 4,
+            "name": "I only like to holiday on 'Thursdays'",
+            "match": {
+              "location": "src\\steps\\weather.js:23"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I look up the weather forecast",
+            "match": {
+              "location": "src\\steps\\weather.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I receive the weather forecast",
+            "match": {
+              "location": "src\\steps\\weather.js:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 978000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "The temperature is warmer than 10 degrees",
+            "match": {
+              "location": "src\\steps\\weather.js:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 0
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
