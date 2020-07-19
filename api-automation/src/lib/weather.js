@@ -72,7 +72,7 @@ class Weather {
 	
 	async serveRequest() {
 		this.result = await requestApi(this.scenario.api);
-		return this.result.status;
+		return this.result;
 	}
 
 	getMinTemperatureOnDay() {

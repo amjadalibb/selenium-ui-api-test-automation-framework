@@ -25,7 +25,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 16000000
+              "duration": 9000000
             }
           },
           {
@@ -34,11 +34,11 @@
             "line": 4,
             "name": "I only like to holiday on 'Thursdays'",
             "match": {
-              "location": "src\\steps\\weather.js:23"
+              "location": "src\\steps\\weather.js:24"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           },
           {
@@ -47,7 +47,7 @@
             "line": 5,
             "name": "I look up the weather forecast",
             "match": {
-              "location": "src\\steps\\weather.js:28"
+              "location": "src\\steps\\weather.js:29"
             },
             "result": {
               "status": "passed",
@@ -60,11 +60,11 @@
             "line": 6,
             "name": "I receive the weather forecast",
             "match": {
-              "location": "src\\steps\\weather.js:33"
+              "location": "src\\steps\\weather.js:34"
             },
             "result": {
               "status": "passed",
-              "duration": 978000000
+              "duration": 1000000000
             }
           },
           {
@@ -73,11 +73,11 @@
             "line": 7,
             "name": "The temperature is warmer than 10 degrees",
             "match": {
-              "location": "src\\steps\\weather.js:39"
+              "location": "src\\steps\\weather.js:42"
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 5000000
             }
           }
         ]

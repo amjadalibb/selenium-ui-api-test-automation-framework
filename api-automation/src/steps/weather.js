@@ -5,7 +5,7 @@ const { Given, When, Then, BeforeAll, AfterAll } = require("cucumber");
 
 const Weather = require('../lib/weather')
 
-let _weather;
+let _weather, _city;
 
 BeforeAll(function () {
 	_weather = new Weather();
@@ -17,6 +17,7 @@ AfterAll(async function () {
 
 Given('I like to holiday in {string}', async function (city) {
 	_weather = new Weather();
+	_city = city;
 	await _weather.getCoordViaCityAndCountry(city);
 });
 
@@ -31,8 +32,10 @@ When('I look up the weather forecast', async function () {
 });
 
 Then('I receive the weather forecast', async function () {
-	const status = await _weather.serveRequest();
-	expect(status).to.equal(200);
+	const _result = await _weather.serveRequest();
+	expect(_result.status).to.equal(200);
+	expect(typeof(JSON.parse(JSON.stringify(_result.data)))).to.equal('object');
+	expect(JSON.stringify(_result.data)).to.contains(_city);
 });
 
 // Assuming that we are only interested for this week
