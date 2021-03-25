@@ -1,6 +1,6 @@
-## WooliesX QA Challenge
+## Test Automation framework for UI and API
 
-- This QA challenge is to setup BDD testing framework and write automation tests for both UI and API.
+- This is BDD test automation framework for both UI and API
 - Below is the tech stack for both UI and API framework:
 	- UI Framework
 		 - Node.js
@@ -16,10 +16,10 @@
 		 - Axios
 
 ### UI Framework
-- Challenge: 
-	- Setup BDD testing framework
+- Info: 
+	- BDD testing framework
 	- Website: http://automationpractice.com/index.php
-	- Acceptance Criteria: I want to be able to add 2 items to the cart and place an order
+	- Add 2 items to the cart and place an order
 
 - Pre-requisite:
 	 - Windows: Must enable execution of scripts, run below powershell command:
@@ -41,8 +41,8 @@
 
 
 ### API Framework
-- Challenge: 
-	- Setup BDD testing framework
+- Info: 
+	- BDD testing framework
 	- Service: http://openweathermap.org/forecast16
 	- Assert that weather temperature is greater than 10 degrees C in Sydney on Thursdays
     - Assert that response is valid JSON and contains Sydney
@@ -60,4 +60,4 @@
 - Report is located under `\test\report`
 
 ### Contributor
-- Amjad Ali
+- Amjad Ali (amjadali_bb@hotmail.com)
